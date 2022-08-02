@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nautilus.mapper.ChampionMapper">
+
+	<select id="getChampionByOrigin" parameterType="String"
+		resultType="String">
+		
+		SELECT name FROM champions WHERE synergy1=#{synergy} or synergy2=#{synergy} or synergy3=#{synergy}
+	</select>
+
+
+</mapper>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<main>
+<h3>참피온</h3>
+<table class="table table-striped">
+    <tr>
+        <th>번호</th>
+        <th>이름</th>
+        <th>계열</th>
+    </tr>
+    <tr th:each="origin : ${map}">
+        <td th:text="${origin.key}"></td>
+        <td>
+            <table class="table">
+                <tr th:each="cham : ${origin.value}">
+                    <td th:text="${cham}"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</main>
+</body>
+</html>

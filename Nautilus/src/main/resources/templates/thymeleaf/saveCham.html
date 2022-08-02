@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<main>
+<h3>로그인</h3>
+<form method="post" th:action="@{/syn/save}" id="input_form" >
+	<div><label>이름</label><input type="text" id="name" name="name"></div>
+	<div><label>origin</label><input type="text" id="originName" name="originName"></div>
+	<div><label>class</label><input type="text" id="className" name="className"></div>
+	<div>
+		<button type="submit">저장</button>
+		<button type="reset">취소</button>
+	</div>
+</form>
+</main>
+</body>
+</html>

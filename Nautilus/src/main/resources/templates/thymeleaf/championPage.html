@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<main>
+<h3>참피온</h3>
+<table class="table table-striped">
+	<tr>
+		<th>번호</th><th>이름</th><th>시너지1</th><th>시너지2</th><th>시너지3</th>
+	</tr>
+
+	<tr th:each="cham : ${list}">
+		<td th:text="${cham.championNum}"></td>
+		<td th:text="${cham.name}"></td>
+		<td th:text="${cham.synergy1}"></td>
+		<td th:text="${cham.synergy2}"></td>
+		<td th:text="${cham.synergy3}"></td>
+	</tr>
+
+</table>
+</main>
+</body>
+</html>

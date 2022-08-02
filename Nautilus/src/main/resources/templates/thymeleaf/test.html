@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="ori" th:object="${test }">
+	<div th:text="'번호 '+*{originName}"></div>
+	<div th:text="'이름 '+*{originExplan}"></div>
+</div>
+</body>
+</html>
