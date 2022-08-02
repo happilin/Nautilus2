@@ -28,7 +28,7 @@ public class SynergyController {
 	@Autowired
 	private SynergyService synService;
 	
-	@GetMapping("")
+	@GetMapping("hi")
 	@ResponseBody
 	public String test() {
 		return "thymeleaf/saveCham";
